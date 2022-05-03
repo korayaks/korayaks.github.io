@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Burak Koray Aksoy Portfolio" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Burak Koray Aksoy</title>
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <h3>
+      <a href="https://github.com/korayaks" target="_blank" rel="noopener noreferrer" class="link">korayaks</a>
+    </h3>
+
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i aria-hidden="true" id="btn-theme" class="fas fa-sun"></i>
+      </button>
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i aria-hidden="true" class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <div class="about center">
+      <h1>Hi, I am <span class="about__name">Burak Koray Aksoy</span></h1>
+      <h2 class="about__role">a Computer Engineer student.</h2>
+      <p class="about__desc">
+        I am a Computer Engineering student at Sakarya University. I love improving myself and learning new things.
+      </p>
+
+      <div class="about__contact center">
+
+
+        <a href="https://github.com/korayaks" target="_blank" rel="noopener noreferrer" aria-label="github"
+          class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/burakkorayaksoy" target="_blank" rel="noopener noreferrer"
+          aria-label="linkedin" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+
+      <div class="projects__grid">
+
+        <div class="project">
+          <h3>UzmanCrm.CrmService</h3>
+          <p class="project__description">
+            Microservice on .Net platform which used Asp.Net Web API, Docker, RabbitMQ and also includes Cross-Cutting
+            implementations like ElasticSearch. I did this project during my internship at Uzman CRM. This project gave
+            me a lot of experience and i learn tons of new things like Docker, ElasticSearch, RabbitMQ.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">.Net 5.0</li>
+            <li class="project__stack-item">Microservice</li>
+            <li class="project__stack-item">ElasticSearch</li>
+            <li class="project__stack-item">RabbitMQ</li>
+            <li class="project__stack-item">Docker</li>
+          </ul>
+          <a href="https://github.com/korayaks/UzmanCrm.CrmService" target="_blank" rel="noopener noreferrer"
+            aria-label="source code" class="link link--icon">
+            Check the code on <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Microservices-Net5</h3>
+          <p class="project__description">
+            .NET Microservice project which include two microservices using REST API pattern. Created synchronous (HTTP
+            & gRPC) and asynchronous (RabbitMQ) messaging between services using a Event Bus. Services have been
+            deployed to the Kubernetes cluster.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">.Net 5.0</li>
+            <li class="project__stack-item">RabbitMQ</li>
+            <li class="project__stack-item">Microservice</li>
+            <li class="project__stack-item">Docker</li>
+            <li class="project__stack-item">Kubernetes</li>
+          </ul>
+          <a href="https://github.com/korayaks/Microservices-Net5" target="_blank" rel="noopener noreferrer"
+            aria-label="source code" class="link link--icon">
+            Check the code on <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+        </div>
+
+
+
+        <div class="project">
+          <h3>cryptoMRX</h3>
+          <p class="project__description">
+            An app which helps you to track all cryptocurrency prices and charts. You can track all cryptocurrency
+            change and change percentage on last 7 days. CryptoMRX is my first mobile app. I used React Native in this
+            application.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">React Native</li>
+            <li class="project__stack-item">Mobile App</li>
+            <li class="project__stack-item">Firebase</li>
+          </ul>
+          <a href="https://github.com/korayaks/cryptoMRX" target="_blank" rel="noopener noreferrer"
+            aria-label="source code" class="link link--icon">
+            Check the code on <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <br>
+          <a href="https://play.google.com/store/apps/details?id=com.korayaks.cryptomrx" target="_blank" rel="noopener noreferrer"
+            aria-label="source code" class="link link--icon">
+            Check the app <i aria-hidden="true" class="fab fa-google-play"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <div id="skills" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));">
+      <section class="section skills" id="section-techstack">
+        <h2 class="section__title">Tech Stack</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">Spring Boot</li>
+          <li class="skills__list-item btn btn--plain">C#</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Vue</li>
+          <li class="skills__list-item btn btn--plain">DevExtreme</li>
+          <li class="skills__list-item btn btn--plain">React Native</li>
+          <li class="skills__list-item btn btn--plain">Microservices</li>
+          <li class="skills__list-item btn btn--plain">ElasticSearch</li>
+          <li class="skills__list-item btn btn--plain">RabbitMQ</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Kubernetes</li>
+        </ul>
+      </section>
+
+      <section class="section skills" id="section-soft-skills">
+        <h2 class="section__title">Soft Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Fast Learning</li>
+          <li class="skills__list-item btn btn--plain">Good Communication</li>
+          <li class="skills__list-item btn btn--plain">Eagerness to Learn</li>
+          <li class="skills__list-item btn btn--plain">Team Player</li>
+          <li class="skills__list-item btn btn--plain">Upper Intermediate Level English</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:burakkorayaksoy@hotmail.com">
+        <span class="btn btn--outline">Mail me</span>
+      </a>
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
