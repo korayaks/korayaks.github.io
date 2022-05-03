@@ -1,6 +1,6 @@
 const body = document.body
 
-const btnTheme = document.querySelector('.fa-sun')
+const btnTheme = document.querySelector('.fa-moon')
 const btnHamburger = document.querySelector('.fa-bars')
 
 const addThemeClass = (bodyClass, btnClass) => {
@@ -27,7 +27,7 @@ const setTheme = (bodyClass, btnClass) => {
 }
 
 const toggleTheme = () =>
-	isDark() ?   setTheme('light', 'fa-moon') : setTheme('dark', 'fa-sun')
+	isDark() ? setTheme('light', 'fa-moon') : setTheme('dark', 'fa-sun')
 
 btnTheme.addEventListener('click', toggleTheme)
 
